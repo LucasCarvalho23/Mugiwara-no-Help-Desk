@@ -3,10 +3,6 @@
     include 'style.php';
     include 'navbar.php';
     include 'footer.php';
-
-    echo ("<pre>");
-    print_r ($_SESSION);
-    echo ("</pre>");
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +34,7 @@
                 ?>
 
                 <p>
-                    TEste
+                    <span class = "text-danger">Wrong login and/or password</span>
                 </p>
 
                 <?php 

@@ -3,11 +3,6 @@
     include 'navbar.php';
     include 'style.php';
     include 'footer.php';
-
-    echo ("<pre>");
-    print_r ($_SESSION);
-    echo ("</pre>");
-
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +22,7 @@
             <div class = "container mt-5 ms-5">
                 <div class = "row">
                     <div class = "col-md-6">
-                    <a href="home.php">
+                    <a href="open-call.php">
                         <img src="image/open-img.png" width="75px">
                     </a>
                     </div>

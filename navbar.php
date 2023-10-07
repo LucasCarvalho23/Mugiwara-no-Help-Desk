@@ -17,12 +17,12 @@
   
         
         <!-- LOGO -->   
-        <a href="#">
+        <a href="router-navbar.php">
             <img src="image/logo-main.png" width="75px">
         </a>
 
         <!-- NOME --> 
-        <a href="#" style="text-decoration: none;" class ="text-dark display-6">
+        <a href="router-navbar.php" style="text-decoration: none;" class ="text-dark display-6">
             <span>MUGIWARA NO HELP DESK</span> 
         </a>
 
