@@ -23,6 +23,7 @@
         if ($_POST['login'] == $value['login']) {
             $validationLogin = true;
             $_SESSION['authentication'] = 1;
+            $_SESSION['login'] = $value['login'];
         } 
         
     }

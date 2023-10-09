@@ -27,7 +27,7 @@
                     </a>
                     </div>
                     <div class = "col-md-6">
-                    <a href="home.php">
+                    <a href="search-call.php">
                         <img src="image/search-img.png" width="75px">
                     </a>
                     </div>

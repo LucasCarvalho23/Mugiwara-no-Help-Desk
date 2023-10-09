@@ -50,6 +50,27 @@
             padding: 10px;
         }
 
+
+        /* SEARCH-CALL.PHP */
+
+        .container-main-search-class {
+            margin-top: 50px;
+        }
+
+        .container-inside-search-class {
+            border: 1px solid #cbcbcb;
+            width: 500px;
+            max-height: 500px;
+            margin: auto;
+        }
+
+        .card-class {
+            padding: 5px;
+        }
+
+
+
+
         /* FOOTER */
 
         footer {
