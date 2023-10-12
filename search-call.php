@@ -1,15 +1,14 @@
 <?php 
-
     session_start();
     include 'navbar.php';
     include 'style.php';
     include 'footer.php';
-
+/*
     echo ("<pre>");
     print_r ($_SESSION);
     echo ("</pre>");
     echo ("<hr>");
-
+*/
     $called = array();
     $file = fopen("file.txt","r");
 
@@ -19,27 +18,6 @@
     }
     
     fclose($file);
-
-    foreach($called as $calls) {
-
-        $calledBreak = explode("#", $calls);
-
-        if (!$calledBreak[0] == $_SESSION['login']) {
-            echo ("<pre>");
-            print_r ($calledBreak);
-            echo ("</pre>");
-            echo ("<br>");
-        } else {
-            echo ('Not working');
-            echo ("<br>");
-        }
-
-        echo ("<pre>");
-        print_r ($calledBreak);
-        echo ("</pre>");
-
-    }
-
 ?>
 
 <!DOCTYPE html>
@@ -60,21 +38,26 @@
             </div>
 
             <div class = "card-class">
-                <div class="card mb-3 bg-light mt-3 card-class">
-                    <h5>Teste</h5>
-                    <h6>Teste</h6>
-                    <p>Teste</p>
-                </div>
-                <div class="card mb-3 bg-light card-class">
-                    <h5>Teste</h5>
-                    <h6>Teste</h6>
-                    <p>Teste</p>
-                </div>
-                <div class="card mb-3 bg-light card-class">
-                    <h5>Teste</h5>
-                    <h6>Teste</h6>
-                    <p>Teste</p>
-                </div>
+
+                <?php 
+                
+                foreach($called as $calls) {
+
+                    $calledBreak = explode("#", $calls);
+
+                    if (count($calledBreak) < 2) {
+                        continue;
+                    }
+                ?>
+
+                    <div class="card mb-3 bg-light mt-3 card-class">
+                        <h5><?php print_r ($calledBreak[1]); ?></h5>
+                        <h6><?php print_r ($calledBreak[2]); ?></h6>
+                        <p><?php print_r ($calledBreak[3]); ?></p>
+                    </div>
+
+                <?php }?>
+
             </div>
 
         </div>

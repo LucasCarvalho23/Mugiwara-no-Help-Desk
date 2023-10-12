@@ -1,6 +1,3 @@
 Zoro # Espada # Create a weapon # Criar uma bainha nova
 Zoro # Strogonoff # Cook a dish # Queria um strogonoff de carne
 Luffy # Carne # Cook a dish # Quero comer um prato de carne
-Nami # Rota # Water problems # Precisamos de uma rota mais segura.
-Nami # sfdsfd # Choose... # 
-Usopp # dsds # Kill someone # 
