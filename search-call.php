@@ -3,12 +3,7 @@
     include 'navbar.php';
     include 'style.php';
     include 'footer.php';
-/*
-    echo ("<pre>");
-    print_r ($_SESSION);
-    echo ("</pre>");
-    echo ("<hr>");
-*/
+
     $called = array();
     $file = fopen("file.txt","r");
 
